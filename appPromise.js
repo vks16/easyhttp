@@ -1,18 +1,17 @@
 const http = new easyHTTP();
-// http.get(
-//     "https://jsonplaceholder.typicode.com/posts",
-//  function(err, response) {
-//      if(err){
-//          console.error(err);
-//      }else{
-//     console.log(response)
-//      }
-// })
+http.get(
+    "https://jsonplaceholder.typicode.com/posts/1"
+).then(function (response) {
+    console.log(response)
+}
+).catch(function (err) {
+    console.error(err)
+})
 
-const data =  {
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  };
+// const data =  {
+//     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+//     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+//   };
 // POST
 
 // http.post(
